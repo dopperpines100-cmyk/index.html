@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="addTabIndex()">
+  <h1>Accessible Interactive Photo Gallery</h1>
+
+  <div id="image" tabindex="0">
+    Hover over an image or focus with keyboard to display here.
+  </div>
+
+  <div class="thumbnails">
+    <img src="https://picsum.photos/id/1011/150/100" alt="Mountain view" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="https://picsum.photos/id/1015/150/100" alt="River scene" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="https://picsum.photos/id/1016/150/100" alt="Forest path" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="https://picsum.photos/id/1020/150/100" alt="Desert dunes" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="https://picsum.photos/id/1024/150/100" alt="Beach coastline" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img src="https://picsum.photos/id/1033/150/100" alt="City skyline" onmouseover="upDate(this)" onmouseout="undo()" onfocus="upDate(this)" onblur="undo()">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
